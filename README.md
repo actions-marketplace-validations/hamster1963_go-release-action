@@ -1,6 +1,7 @@
 # Go Release GitHub Action
-![Build Docker](https://github.com/wangyoucao577/go-release-action/workflows/Build%20Docker/badge.svg) ![PR Build](https://github.com/wangyoucao577/go-release-action/workflows/PR%20Build/badge.svg) [![Test](https://github.com/wangyoucao577/go-release-action/actions/workflows/autotest.yml/badge.svg)](https://github.com/wangyoucao577/go-release-action/actions/workflows/autotest.yml)            
+![Build Docker](https://github.com/hamster1963/go-release-action/workflows/Build%20Docker/badge.svg) ![PR Build](https://github.com/hamster1963/go-release-action/workflows/PR%20Build/badge.svg) [![Test](https://github.com/wangyoucao577/go-release-action/actions/workflows/autotest.yml/badge.svg)](https://github.com/hamster1963/go-release-action/actions/workflows/autotest.yml)            
 Automatically publish `Go` binaries to Github Release Assets through Github Action.
+
 
 ## Features
 - Build `Go` binaries for release and publish to Github Release Assets.
@@ -45,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: wangyoucao577/go-release-action@v1
+    - uses: hamster1963/go-release-action@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
@@ -116,7 +117,7 @@ jobs:
             goos: windows
     steps:
     - uses: actions/checkout@v3
-    - uses: wangyoucao577/go-release-action@v1
+    - uses: hamster1963/go-release-action@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
