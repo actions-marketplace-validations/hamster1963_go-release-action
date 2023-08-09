@@ -7,7 +7,7 @@ if [[ "${INPUT_GOVERSION##*/}" == "go.mod" ]]; then
 fi
 if [[ ${INPUT_GOVERSION} == "1.20" ]]; then
     GO_LINUX_PACKAGE_URL="https://go.dev/dl/go1.20.7.linux-${ARCH}.tar.gz"
-if [[ ${INPUT_GOVERSION} == "1.19" ]]; then
+elif [[ ${INPUT_GOVERSION} == "1.19" ]]; then
     GO_LINUX_PACKAGE_URL="https://go.dev/dl/go1.19.1.linux-${ARCH}.tar.gz"
 elif [[ ${INPUT_GOVERSION} == "1.18" ]]; then
     GO_LINUX_PACKAGE_URL="https://go.dev/dl/go1.18.6.linux-${ARCH}.tar.gz"
