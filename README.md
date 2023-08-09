@@ -1,5 +1,4 @@
-# Go Release GitHub Action
-![Build Docker](https://github.com/hamster1963/go-release-action/workflows/Build%20Docker/badge.svg) ![PR Build](https://github.com/hamster1963/go-release-action/workflows/PR%20Build/badge.svg) [![Test](https://github.com/wangyoucao577/go-release-action/actions/workflows/autotest.yml/badge.svg)](https://github.com/hamster1963/go-release-action/actions/workflows/autotest.yml)            
+# Go Release GitHub Action     
 Automatically publish `Go` binaries to Github Release Assets through Github Action.
 
 
@@ -46,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: hamster1963/go-release-action@v1
+    - uses: hamster1963/go-release-action@v1.2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
@@ -117,7 +116,7 @@ jobs:
             goos: windows
     steps:
     - uses: actions/checkout@v3
-    - uses: hamster1963/go-release-action@v1
+    - uses: hamster1963/go-release-action@v1.2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
@@ -127,9 +126,3 @@ jobs:
         binary_name: "test-binary"
         extra_files: LICENSE README.md
 ```
-
-### More Examples
-Welcome share your usage for other people's reference!
-- [wiki/More-Examples](https://github.com/wangyoucao577/go-release-action/wiki/More-Examples)
-
-[:clap:](":clap:")[:clap:](":clap:")[:clap:](":clap:") Enjoy! Welcome [star](https://github.com/wangyoucao577/go-release-action/) if like it[:smile:](:smile:)
