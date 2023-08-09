@@ -66,7 +66,7 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goamd64: ${{ matrix.goamd64 }}
         goarm: ${{ matrix.goarm }}
-        goversion: https://go.dev/dl/go1.19.7.linux-amd64.tar.gz
+        goversion: https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
         project_path: ./test/
         binary_name: testmain
         pre_command: go mod init localtest
